@@ -15,24 +15,8 @@ def options_value(element):
   return options
 
 
-def check_page(button):
-  try:
-    dropdown = WebDriverWait(driver, 2).until(
-        EC.presence_of_element_located((By.XPATH, "//button[@data-id='"+button+"']")))
-    iframe = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
-    driver.switch_to.frame(iframe)
-  except:
-    driver.switch_to.default_content()
-    driver.refresh()
-    print("reload", driver.get_log('browser'), driver.current_url)
-    time.sleep(10)
-    check_page(button)
-
-
 def dropdown_selection(button, value):
   """change dropdown option"""
-  check_page(button)
   driver.find_element_by_xpath("//button[@data-id='"+button+"']").click()
   time.sleep(1)
   driver.find_element_by_xpath(
@@ -43,7 +27,6 @@ PATH = "C:\Program Files (x86)\chromedriver.exe"
 url = "https://www.amfiindia.com/research-information/other-data/mf-scheme-performance-details"
 driver = webdriver.Chrome(PATH)
 driver.get(url)
-driver.maximize_window()
 
 try:
   # Wait for 10 s at max for the page to load before throwing exception
@@ -66,7 +49,7 @@ try:
   date = driver.find_element_by_id("nav-date")
   date.clear()
   date.send_keys("24/09/2021")
-  time.sleep(1)
+  time.sleep(2)
 
   for endType in end_type_options:
     if endType == "":
@@ -100,16 +83,9 @@ try:
               go_button.click()
               print(go_button.text)
               time.sleep(5)
-              try:
-                download.click()
-              except:
-                pass
-              finally:
-                driver.switch_to.default_content()
-                driver.refresh()
-                iframe = WebDriverWait(driver, 10).until(
-                    EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
-                driver.switch_to.frame(iframe)
+
+              # download.click()
+
               # time.sleep(10)
 
 
