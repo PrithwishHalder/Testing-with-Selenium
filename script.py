@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support.select import Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
@@ -23,9 +22,26 @@ def dropdown_selection(button, value):
       "//div[@class='bs-container btn-group bootstrap-select open']//ul/li[@data-original-index='"+value+"']/a").click()
 
 
+def download_file():
+  try:
+    download = WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.ID, "download-report-excel")))
+    download.click()
+    download = WebDriverWait(driver, 1).until(
+        EC.element_to_be_clickable((By.ID, "download-report-excel")))
+  except:
+    driver.switch_to.default_content()
+    driver.refresh()
+    print("reload", driver.current_url)
+    time.sleep(5)
+    download_file()
+
+
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 url = "https://www.amfiindia.com/research-information/other-data/mf-scheme-performance-details"
-driver = webdriver.Chrome(PATH)
+options = webdriver.ChromeOptions()
+options.add_argument('--disable-blink-features=AutomationControlled')
+driver = webdriver.Chrome(PATH, options=options)
 driver.get(url)
 
 try:
@@ -73,24 +89,17 @@ try:
               index = str(category_options.index(category))
               print(index)
               dropdown_selection("category", index)
-              time.sleep(5)
               go_button = WebDriverWait(driver, 10).until(
                   EC.element_to_be_clickable((By.CLASS_NAME, "amfi-btn")))
-              download = WebDriverWait(driver, 10).until(
-                  EC.element_to_be_clickable((By.ID, "download-report-excel")))
-              # driver.find_element_by_id("download-report-excel")
-              # go_button.send_keys(Keys.SPACE)
+              # download = WebDriverWait(driver, 10).until(
+              #     EC.element_to_be_clickable((By.ID, "download-report-excel")))
               go_button.click()
               print(go_button.text)
-              time.sleep(5)
-
-              # download.click()
-
-              # time.sleep(10)
+              download_file()
 
 
 except TimeoutException:
   print("Page Loading took too much time")
 
 
-driver.quit()
+# driver.quit()
