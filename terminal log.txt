@@ -1,0 +1,87 @@
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+parts_metrics.cc(231)] crbug.com/1216328: Checking Bluetoothparts_metrics.cc(228)] crbug.com/1 availability ended.                                        rt if there is no report that thisktop/CelebalTech/env/Scripts/Activate.ps1
+[18168:8176:0929/192217.710:ERROR:chrome_browser_main_extra_                                  ve/Desktop/CelebalTech/env/Scripts/python.exe "c:/Users/halde/OneDrive/Desktop/CelebalTech/Task6 (Selenium)parts_metrics.cc(234)] crbug.com/1216328: Checking default bparts_metrics.cc(231)] crbug.com/1rowser status started. Please report if there is no report that this ends.                                              parts_metrics.cc(234)] crbug.com/1b0
+[18168:24924:0929/192217.717:ERROR:device_event_log_impl.cc(rt if there is no report that this214)] [19:22:17.717] Bluetooth: bluetooth_adapter_winrt.cc:1                                  216328: Checking Bluetooth availability started. Please report if there is no report that this ends.073 Getting Default Adapter failed.                         214)] [19:22:17.717] Bluetooth: bl216328: Checking Bluetooth availability ended.
+[18168:8176:0929/192217.725:ERROR:chrome_browser_main_extra_.                                 216328: Checking default browser status started. Please report if there is no report that this ends.parts_metrics.cc(238)] crbug.com/1216328: Checking default bparts_metrics.cc(238)] crbug.com/1uetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.rowser status ended.                                                                          216328: Checking default browser status ended.
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+[13404:12248:0929/192409.531:ERROR:gpu_init.cc(453)] Passthrough is not supported, GL is disabled, ANGLE is
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+Data Unavailable!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+File Downloaded!
+Data Unavailable!
+File Downloaded!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+File Downloaded!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+File Downloaded!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+File Downloaded!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+Data Unavailable!
+(env) PS C:\Users\halde\OneDrive\Desktop\CelebalTech\Task6 (Selenium)>
